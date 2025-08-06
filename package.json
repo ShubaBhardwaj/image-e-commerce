@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@imagekit/next": "^2.1.2",
     "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.1",
+    "imagekit": "^6.0.0",
+    "lucide-react": "^0.536.0",
     "mongoose": "^8.16.4",
     "next": "15.4.2",
     "next-auth": "^4.24.11",
