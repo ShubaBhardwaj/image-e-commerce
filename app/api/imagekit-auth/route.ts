@@ -27,7 +27,7 @@ export async function GET() {
     await connectToDatabase()
     const user = await User.findOne({ email: session.user.email })
 
-    if (!user || user.role !== "admin") {
+    if (!user || user?.role !== "admin") {
         return NextResponse.json({
             error: "Forbidden - Admins Only",
             status: 403
